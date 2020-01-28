@@ -15,7 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "SwiftSocket",
-            dependencies: []),
+            dependencies: [],
+            path: "Sources")),
         .testTarget(
             name: "SwiftSocketTests",
             dependencies: []),
