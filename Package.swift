@@ -7,6 +7,10 @@ let package = Package(
     products: [
         .library(name: "SwiftSocket", targets: ["SwiftSocket"]),
     ],
+    platforms: [.macOS(.v10_10),
+              .iOS(.v8),
+              .tvOS(.v9)
+    ],
     dependencies: [ ],
     targets: [
         .target(
@@ -15,5 +19,6 @@ let package = Package(
         .testTarget(
             name: "SwiftSocketTests",
             dependencies: []),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
